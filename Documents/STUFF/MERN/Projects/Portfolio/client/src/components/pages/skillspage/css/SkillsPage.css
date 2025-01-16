@@ -1,0 +1,98 @@
+/* Container for the skills page */
+.skills-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Title for the skills section */
+.skills-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Wrapper for the skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items */
+  justify-content: center; /* Centers items horizontally */
+  gap: 1.5rem; /* Spacing between skill cards */
+}
+
+/* Individual skill card */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 150px; /* Fixed width for consistency */
+  aspect-ratio: 1; /* Ensures square shape */
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.05); /* Interactive hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #eaeaea;
+}
+
+/* Skill icon inside each card */
+.skill-icon {
+  width: 80px; /* Icon size */
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+/* Skill name text */
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .skills-list {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items */
+    gap: 1rem; /* Adjust spacing for smaller screens */
+  }
+
+  .skill-card {
+    width: 200px; /* Slightly larger for better readability */
+    aspect-ratio: auto; /* Maintain proper aspect ratio */
+  }
+
+  .skill-icon {
+    width: 70px; /* Adjust icon size */
+    height: 70px;
+  }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+  .skills-list {
+    gap: 0.8rem; /* Reduce spacing for small screens */
+  }
+
+  .skill-card {
+    width: 180px; /* Slightly smaller card size */
+  }
+
+  .skill-icon {
+    width: 60px; /* Adjust icon size */
+    height: 60px;
+  }
+
+  .skill-name {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}

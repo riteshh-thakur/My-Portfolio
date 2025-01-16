@@ -1,0 +1,96 @@
+/* General styles for the contact page */
+.contact {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  h2.text-center {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Form styles */
+  form {
+    width: 100%;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive grid layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .col-lg-6 {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+  
+  @media (max-width: 768px) {
+    .col-lg-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Button container */
+  .d-flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  button.col-lg-6 {
+    max-width: 300px;
+  }
+  
+  /* Toast container adjustments */
+  .Toastify__toast-container {
+    width: auto;
+  }
+  
+  .Toastify__toast {
+    font-size: 1rem;
+  }

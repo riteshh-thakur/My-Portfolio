@@ -1,0 +1,124 @@
+/* General container styling */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Card container */
+.card_div {
+  display: flex; /* Use Flexbox for layout */
+  flex-wrap: wrap; /* Allows cards to wrap into new rows */
+  justify-content: center; /* Centers cards horizontally */
+  gap: 20px; /* Spacing between cards */
+  padding: 20px;
+}
+
+/* Individual card styling */
+.custom-card {
+  width: 300px; /* Fixed width for all cards */
+  height: 100%; /* Ensures consistent height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures consistent alignment inside the card */
+}
+
+.custom-card img {
+  width: 100%;
+  height: 180px; /* Fixed height for images */
+  object-fit: cover; /* Prevents image distortion */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.custom-card .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-card .btn {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.custom-card .btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003d7a);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.custom-card .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.loader-container{
+  padding: 200px 200px;
+}
+
+/* Responsive Design */
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 576px) {
+  .card_div {
+    flex-direction: column; /* Align cards vertically */
+    align-items: center;
+    gap: 15px; /* Reduced spacing for smaller screens */
+  }
+
+  .custom-card {
+    width: 90%; /* Full width for better readability */
+  }
+
+  .custom-card img {
+    height: 150px; /* Smaller image height */
+  }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .card_div {
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .custom-card {
+    width: 80%; 
+}
+}
+/* Desktops and larger screens (min-width: 992px) */
+@media (min-width: 992px) {
+  .card_div {
+    flex-direction: row; /* Align cards horizontally */
+    justify-content: space-evenly; /* Distribute cards evenly */
+    gap: 30px; /* Increased spacing for larger screens */
+  }
+}
