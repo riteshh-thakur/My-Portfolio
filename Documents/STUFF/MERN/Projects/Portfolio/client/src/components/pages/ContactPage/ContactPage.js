@@ -52,7 +52,7 @@ const Contact = () => {
       toast.error("Mobile number is required");
     } else {
       try {
-        const res = await fetch("http://localhost:7002/register", {
+        const res = await fetch("https://my-portfolio-zqe7.onrender.com", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
