@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
@@ -52,7 +48,7 @@ const Contact = () => {
       toast.error("Mobile number is required");
     } else {
       try {
-        const res = await fetch("https://my-portfolio-zqe7.onrender.com", {
+        const res = await fetch("https://my-portfolio-zqe7.onrender.com/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -86,7 +82,6 @@ const Contact = () => {
     return (
       <div className="loader-container">
         <Loader />
-        {/* <p>Loading Contact Page...</p> */}
       </div>
     );
   }
