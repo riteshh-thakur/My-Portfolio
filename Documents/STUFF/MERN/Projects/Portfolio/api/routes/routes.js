@@ -75,92 +75,37 @@
 // })
 
 
-const express = require("express");
-const router = new express.Router();
-const users = require("../models/userSchema");
-const nodemailer = require("nodemailer");
-
-// Backend base URL
-const BASE_URL = "https://my-portfolio-zqe7.onrender.com"; // Backend link
-
-// Email configuration
-const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASS,
-    },
-});
-
-// Register user details
-router.post("/register", async (req, res) => {
-    const { fname, lname, email, mobile, message } = req.body;
-
-    if (!fname || !lname || !email || !mobile) {
-        return res.status(401).json({ status: 401, error: "All inputs are required" });
-    }
-
-    try {
-        const preuser = await users.findOne({ email: email });
-
-        if (preuser) {
-            const userMessage = await preuser.Messagesave(message);
-            console.log(userMessage);
-
-            const mailOptions = {
-                from: process.env.EMAIL,
-                to: email,
-                subject: "Sending email using Node.js",
-                text: "Your response has been submitted successfully.",
-            };
-
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    console.error("Error sending email:", error);
-                    return res.status(500).json({ status: 500, error: "Email failed to send" });
-                } else {
-                    console.log("Email sent:", info.response);
-                    return res.status(201).json({ status: 201, message: "Email sent successfully" });
-                }
-            });
-        } else {
-            const finalUser = new users({
-                fname,
-                lname,
-                email,
-                mobile,
-                messages: { message: message },
-            });
-
-            const storeData = await finalUser.save();
-
-            const mailOptions = {
-                from: process.env.EMAIL,
-                to: email,
-                subject: "Sending email using Node.js",
-                text: "Your response has been submitted successfully.",
-            };
-
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    console.error("Error sending email:", error);
-                    return res.status(500).json({ status: 500, error: "Email failed to send" });
-                } else {
-                    console.log("Email sent:", info.response);
-                    return res.status(201).json({ status: 201, message: "Email sent successfully" });
-                }
-            });
-
-            res.status(201).json({ status: 201, storeData });
-        }
-    } catch (error) {
-        console.error("Error in register route:", error);
-        res.status(500).json({ status: 500, error: "Internal Server Error" });
-    }
-});
-
-module.exports = router;
-
 
 
 // module.exports = router;
+
+
+// routes.js
+
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Contact from "./components/Contact/Contact"; // Adjust the path to the actual location of your Contact component
+
+const AppRoutes = () => {
+  return (
+    <Router>
+      <Routes>
+        {/* Define the route for the Contact page */}
+        <Route path="/contact" element={<Contact />} />
+
+        {/* Add other routes as needed */}
+        <Route
+          path="*"
+          element={
+            <div style={{ textAlign: "center", marginTop: "50px" }}>
+              <h1>404 - Page Not Found</h1>
+              <p>The page you're looking for does not exist.</p>
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
+  );
+};
+
+export default AppRoutes;
