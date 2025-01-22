@@ -1,5 +1,3 @@
-
-
 .skill-set-wrapper {
   padding: 2rem;
   text-align: center;
@@ -80,6 +78,11 @@
 
 /* Small screens (mobile devices) */
 @media (max-width: 480px) {
+  .skill-set-item-wrapper,
+  .skills-list {
+    justify-content: center; /* Center-align skills horizontally */
+  }
+
   .skill-card {
     width: 90px; /* Slightly smaller cards for mobile */
   }
@@ -89,4 +92,3 @@
     height: 40px;
   }
 }
-
