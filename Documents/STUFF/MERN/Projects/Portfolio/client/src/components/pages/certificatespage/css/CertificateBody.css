@@ -77,7 +77,7 @@ h2 {
   color: white;
 }
 
-.loader-container{
+.loader-container {
   padding: 200px 200px;
 }
 
@@ -87,12 +87,13 @@ h2 {
 @media (max-width: 576px) {
   .card_div {
     flex-direction: column; /* Align cards vertically */
-    align-items: center;
+    align-items: center; /* Center cards horizontally */
     gap: 15px; /* Reduced spacing for smaller screens */
   }
 
   .custom-card {
     width: 90%; /* Full width for better readability */
+    max-width: 300px; /* Uniform card size */
   }
 
   .custom-card img {
@@ -100,20 +101,20 @@ h2 {
   }
 }
 
-
-
-
-
+/* Tablets (up to 768px) */
 @media (max-width: 768px) {
   .card_div {
-    flex-direction: column; 
-    gap: 20px; 
+    flex-direction: row; /* Align cards horizontally */
+    justify-content: center; /* Center cards horizontally */
+    gap: 20px; /* Maintain spacing */
   }
 
   .custom-card {
-    width: 80%; 
+    width: 80%; /* Adjusted card size for better readability */
+    max-width: 300px; /* Maintain uniform card size */
+  }
 }
-}
+
 /* Desktops and larger screens (min-width: 992px) */
 @media (min-width: 992px) {
   .card_div {
