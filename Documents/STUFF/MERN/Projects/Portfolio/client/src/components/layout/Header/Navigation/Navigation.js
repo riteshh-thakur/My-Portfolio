@@ -18,7 +18,7 @@ const Navigation = () => {
                         <ListItem><Link size="large" color="primary" onClick={() => {navigate("/certificates"); setDrawerOpen(false)}}>Certificates</Link></ListItem>
                         <ListItem><Link size="large" color="primary" onClick={() => {navigate("/skills"); setDrawerOpen(false)}}>Skills</Link></ListItem>
                     </List>
-                    <Link size="large" color="primary" onClick={() => {navigate("/blogs"); setDrawerOpen(false)}}>Contact</Link>
+                    <Link size="large" color="primary" onClick={() => {navigate("/contact"); setDrawerOpen(false)}}>Contact</Link>
                 </div>
             </Drawer>
         </>
