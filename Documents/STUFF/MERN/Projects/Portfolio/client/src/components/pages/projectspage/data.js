@@ -53,6 +53,12 @@ const projectData = [
         demo:"https://phenomenal-meerkat-55b3f0.netlify.app/",
         imgsrc:"/Screenshot 2025-01-09 141420.png"
     },
+    {
+        id:10,
+        projectName:"Canva-Editor",
+        demo:"https://67a1145caabe832ad69ea12b--fantastic-jalebi-d065b4.netlify.app/",
+        imgsrc:"/Screenshot 2025-01-09 141420.png"
+    },
 ]
 
 export default projectData;
