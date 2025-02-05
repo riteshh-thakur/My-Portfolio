@@ -63,7 +63,7 @@ const projectData = [
         id:11,
         projectName:"Note-Taking Web-App",
         demo:"https://note-taking-app-1-xqmw.onrender.com",
-        imgsrc:"/Screenshot 2025-02-04 005301.png"
+        imgsrc:"/Screenshot 2025-02-05 153712.png"
     },
 ]
 
