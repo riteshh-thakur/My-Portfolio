@@ -59,6 +59,12 @@ const projectData = [
         demo:"https://67a1145caabe832ad69ea12b--fantastic-jalebi-d065b4.netlify.app/",
         imgsrc:"/Screenshot 2025-02-04 005301.png"
     },
+    {
+        id:11,
+        projectName:"Note-Taking Web-App",
+        demo:"https://note-taking-app-1-xqmw.onrender.com",
+        imgsrc:"/Screenshot 2025-02-04 005301.png"
+    },
 ]
 
 export default projectData;
