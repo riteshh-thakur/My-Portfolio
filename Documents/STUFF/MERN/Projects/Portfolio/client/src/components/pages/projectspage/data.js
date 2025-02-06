@@ -19,48 +19,54 @@ const projectData = [
     },
     {
         id:4,
+        projectName:"Event-Management App",
+        demo:"https://event-management-1-1nyc.onrender.com",
+        imgsrc:"/Screenshot 2025-02-05 153712.png"
+    },
+    {
+        id:5,
         projectName:"Registration-Form(Live)",
         demo:"https://heroic-shortbread-25eb19.netlify.app/",
         imgsrc:"/Screenshot 2025-01-08 184547.png"
     },
     {
-        id:5,
+        id:6,
         projectName:"Image Resizing Application(Source-Code)",
         demo:"https://github.com/riteshh-thakur/Image-Resizing",
         imgsrc:"/Screenshot 2025-01-09 130618.png"
     },
     {
-        id:6,
+        id:7,
         projectName:"Signature-Website(Live)",
         demo:"https://signaturewebsite123.netlify.app/",
         imgsrc:"/signature-website.png"
     },
     {
-        id:7,
+        id:8,
         projectName:"Key-Logger(Live)",
         demo:"https://cosmic-gaufre-a0e0f3.netlify.app/",
         imgsrc:"/Screenshot 2025-01-08 191309.png"
     },
     {
-        id:8,
+        id:9,
         projectName:"Landing-Page(Live)",
         demo:"https://landingpppage.netlify.app/",
         imgsrc:"/Screenshot 2025-01-08 192204.png"
     },
     {
-        id:9,
+        id:10,
         projectName:"To-Do List(Live)",
         demo:"https://phenomenal-meerkat-55b3f0.netlify.app/",
         imgsrc:"/Screenshot 2025-01-09 141420.png"
     },
     {
-        id:10,
+        id:11,
         projectName:"Canva-Editor",
         demo:"https://67a1145caabe832ad69ea12b--fantastic-jalebi-d065b4.netlify.app/",
         imgsrc:"/Screenshot 2025-02-04 005301.png"
     },
     {
-        id:11,
+        id:12,
         projectName:"Note-Taking Web-App",
         demo:"https://note-taking-app-1-xqmw.onrender.com",
         imgsrc:"/Screenshot 2025-02-05 153712.png"
