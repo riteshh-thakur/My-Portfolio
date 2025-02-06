@@ -21,7 +21,7 @@ const projectData = [
         id:4,
         projectName:"Event-Management App",
         demo:"https://event-management-1-1nyc.onrender.com",
-        imgsrc:"/Screenshot 2025-02-05 153712.png"
+        imgsrc:"Screenshot 2025-02-07 011809.png"
     },
     {
         id:5,
