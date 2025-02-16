@@ -64,7 +64,7 @@ const Intropage = () => {
             </List>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "2rem", columnGap: "2rem", rowGap: "1rem", flexWrap: "wrap"}}>
                
-                <Button variant="neumorph" color="primary" onClick={() => {window.open("https://drive.google.com/file/d/155V8zjNrEhXfMuLQPWh70C5EVyy1haVj/view?usp=drive_link")}}>View Resume</Button>
+                <Button variant="neumorph" color="primary" onClick={() => {window.open("https://drive.google.com/file/d/1HiOMwXgJ6JkDLuZLytFY53WL7gqU4ZOX/view?usp=sharing")}}>View Resume</Button>
                 <Button variant="neumorph" color="primary" onClick={() => {window.open("https://www.linkedin.com/in/ritesh-thakur-35ba71249/")}}>LinkedIn Profile</Button>
             </div>
             </div>
