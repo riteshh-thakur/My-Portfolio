@@ -21,7 +21,7 @@ const projectData = [
         id:4,
         projectName:"Token-Stake-Dapp(Source-Code)",
         demo:"https://github.com/riteshh-thakur/Token-Staking-Dapp",
-        imgsrc:"/Screenshot 2025-01-08 185246.png"
+        imgsrc:"/Screenshot_28-2-2025_181636_localhost.jpeg"
     },
     {
         id:5,
